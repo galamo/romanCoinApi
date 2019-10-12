@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark ">
+        <span class="navbar-brand">4X-crypto-tracking</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li id="home" class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a id="live_reports" class="nav-link" href="#">live reports </a>
+                </li>
+                <li id="about_page" class="nav-item active">
+                    <a class="nav-link" href="#">about </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchValue" class="form-control mr-sm-2" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button id="chearchBtn" onclick=search() class="btn btn-outline-success my-2 my-sm-0"
+                    type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>you cant save more than 5 coins</h3>
+            <div id="inModay" class="row container-fluid"></div>
+        </div>
+    </div>
+
+    <div class="parallax2"></div>
+    <div id="testDiv" class=" row  justify-content-center"></div>
+    <div class="parallax1"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./libraries/jquery.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="apiCalls.js"></script>
+    <script src="liveReport.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
