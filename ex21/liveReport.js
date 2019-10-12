@@ -7,7 +7,7 @@ function liveReportFunc(arrayOfData) {
     // liveReportsChart.style.height = "370px"
     // liveReportsChart.style.width = "100%"
 
-
+//Gal: Remove comments?!
     liveReport.addEventListener("click", function () {
         // const liveRepo = arrayOfData.map(liveCoin => {
         //     return (liveCoin.symbol.toUpperCase());
